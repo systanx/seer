@@ -396,7 +396,6 @@ combo_variable.bind("<<ComboboxSelected>>", lambda event: habilitar_campos(combo
 def update_scroll_region(event):
     canvas.configure(scrollregion=canvas.bbox("all"))
 
-frame_content.bind("<Configure>", update_scroll_region)
 
 # Run the main loop
 root.mainloop()
